@@ -2,6 +2,10 @@ import urllib
 import urllib2
 from HTMLParser import HTMLParser
 
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
